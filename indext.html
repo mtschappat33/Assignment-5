@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Forms</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <h1>Get to Know You Survey</h1>
+    <form action="#" method="post">
+      <label for="name">Full Name:</label>
+      <input
+        autofocus
+        type="text"
+        name="name"
+        id="name"
+        size="50"
+        placeholder="Your Name"
+        required
+      />
+
+      <label for="email">Email Address:</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        size="50"
+        placeholder="Email Address"
+        required
+      />
+
+      <label for="password">Password:</label>
+      <input type="password" name="password" id="password" size="50" />
+
+      <label for="dob">Date of Birth</label>
+      <input type="date" name="dob" id="dob" />
+
+      <label for="country">Where are you from?</label>
+      <select name="country" id="country">
+        <option value="">Select one</option>
+        <option value="us">United States</option>
+        <option value="uk">United Kingdom</option>
+        <option value="ca">Canada</option>
+      </select>
+
+      <label for="color">What's your favotie color:</label>
+      <input type="color" name="color" id="color" />
+
+      <label for="movie">What's your favorite movie?</label>
+      <input type="movie" name="movie" id="movie" size="50" />
+
+      <label for="message">What advice would you tell your younger self?</label>
+      <textarea name="message" id="message"></textarea>
+
+      <fieldset>
+        <legend>What's the best way to contact you?</legend>
+
+        <label for="contact-email">Email</label>
+        <input type="radio" name="contact" id="contact-email" value="email" />
+        <label for="contact-phone">Phone</label>
+        <input type="radio" name="contact" id="contact-phone" value="Phone" />
+      </fieldset>
+
+      <label for="subscribe">Clcik if you like dogs!</label>
+      <input type="checkbox" name="subscribe" id="subscribe" />
+
+</br>
+</br>
+
+      <button type="submit">Submit Form</button>
+    </form>
+  </body>
+</html>
